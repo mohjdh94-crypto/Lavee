@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100b18">
+<meta name="description" content="یک صفحه عاشقانه، از دلِ محمد برای سُودا">
+<title>برای سُودا | از طرف محمد</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+:root{
+ --night:#100b18;--wine:#32162d;--rose:#ff8eae;--pink:#ffb8cb;
+ --ivory:#fff4f5;--muted:#d9c3d0;--gold:#f5d5b1;
+ --glass:rgba(255,255,255,.065);--line:rgba(255,220,232,.15);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--ivory);font-family:"Vazirmatn",Tahoma,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:
+ radial-gradient(ellipse at 50% -10%,rgba(148,48,95,.42),transparent 55%),
+ radial-gradient(ellipse at 0% 45%,rgba(79,42,89,.25),transparent 42%),
+ linear-gradient(160deg,#100b18 0%,#1b1020 48%,#100b18 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:.15;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+a{color:inherit}
+.container{width:min(1080px,calc(100% - 36px));margin:auto}
+.nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:22px max(22px,calc((100vw - 1080px)/2));color:#f5dce5;font-size:13px}
+.brand{display:flex;align-items:center;gap:9px;letter-spacing:.4px}
+.brand-mark{width:29px;height:29px;border:1px solid #ff9db9;border-radius:50%;display:grid;place-items:center;color:var(--rose);font-size:14px}
+.nav-note{opacity:.7}
+.hero{min-height:790px;min-height:100svh;display:grid;place-items:center;text-align:center;position:relative;padding:110px 0 80px;isolation:isolate}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none;z-index:-1}
+.hero:before{width:min(75vw,650px);aspect-ratio:1;background:radial-gradient(circle,rgba(232,85,137,.15),rgba(232,85,137,.04) 48%,transparent 70%);animation:pulse 6s ease-in-out infinite}
+.hero:after{width:min(55vw,420px);aspect-ratio:1;border:1px solid rgba(255,181,203,.09);box-shadow:0 0 90px rgba(255,103,157,.08),inset 0 0 80px rgba(255,103,157,.04)}
+@keyframes pulse{50%{transform:scale(1.08);opacity:.65}}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--pink);font-size:12px;letter-spacing:2px;margin-bottom:26px}
+.eyebrow:before,.eyebrow:after{content:"";height:1px;width:30px;background:linear-gradient(90deg,transparent,var(--rose))}
+.eyebrow:after{transform:scaleX(-1)}
+.hero-heart{font-size:clamp(54px,9vw,82px);line-height:1;display:block;margin:0 auto 26px;filter:drop-shadow(0 0 25px rgba(255,103,157,.55));animation:heartbeat 2s ease-in-out infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}12%{transform:scale(1.12)}23%{transform:scale(1)}35%{transform:scale(1.07)}}
+h1{font-size:clamp(44px,9vw,94px);font-weight:800;line-height:1.2;margin:0;letter-spacing:-2px}
+h1 .name{display:block;color:transparent;background:linear-gradient(100deg,#fff1f4 5%,#ff9dbb 45%,#f7d4bd 85%);background-clip:text;-webkit-background-clip:text;text-shadow:0 12px 50px rgba(255,113,159,.12)}
+.hero-sub{max-width:610px;margin:25px auto 0;color:#e6cbd7;font-size:clamp(15px,2vw,19px);line-height:2.2;font-weight:300}
+.hero-sub strong{color:#fff;font-weight:600}
+.scroll-cue{position:absolute;bottom:25px;display:grid;gap:8px;justify-items:center;color:#bfa5b4;font-size:11px;letter-spacing:1px}
+.scroll-cue i{width:1px;height:34px;background:linear-gradient(var(--rose),transparent);animation:drop 1.7s infinite}
+@keyframes drop{0%{transform:scaleY(.3);transform-origin:top}50%{transform:scaleY(1)}100%{transform:scaleY(.3);transform-origin:bottom}}
+section{padding:100px 0;position:relative}
+.section-head{text-align:center;margin:0 auto 48px;max-width:650px}
+.overline{font-size:11px;letter-spacing:2px;color:var(--rose);margin-bottom:13px}
+h2{font-size:clamp(28px,5vw,43px);margin:0 0 15px;line-height:1.5;font-weight:700}
+.section-head p{color:var(--muted);line-height:2;font-size:15px;margin:0}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{position:relative;min-height:220px;padding:29px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));overflow:hidden;transition:transform .35s,border-color .35s}
+.card:hover{transform:translateY(-5px);border-color:rgba(255,142,174,.45)}
+.card:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:rgba(255,122,163,.07);filter:blur(25px);left:-70px;bottom:-85px}
+.card-icon{font-size:25px;margin-bottom:20px;display:block}
+.card h3{font-size:19px;margin:0 0 10px;color:#ffe5ec}
+.card p{font-size:14px;line-height:2.15;color:#d6bdca;margin:0;max-width:430px}
+.card .tiny{display:block;color:var(--rose);font-size:10px;letter-spacing:1.5px;margin-top:20px}
+.quote-section{padding:90px 0}
+.quote{position:relative;text-align:center;max-width:800px;margin:auto;padding:55px 38px;border-top:1px solid rgba(255,177,201,.25);border-bottom:1px solid rgba(255,177,201,.25)}
+.quote-mark{font-family:Georgia,serif;font-size:75px;line-height:.5;color:rgba(255,142,174,.5)}
+.quote p{font-size:clamp(22px,4.4vw,36px);line-height:2.05;font-weight:500;margin:20px 0;color:#fff0f4}
+.quote p em{font-style:normal;color:var(--pink)}
+.quote small{color:#c7aab9;font-size:12px}
+.letter-wrap{max-width:760px;margin:auto}
+.letter{border:1px solid rgba(255,200,217,.2);border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.085),rgba(255,255,255,.025));padding:clamp(25px,6vw,55px);box-shadow:0 30px 100px rgba(0,0,0,.18);position:relative}
+.letter:before{content:"";position:absolute;inset:9px;border:1px solid rgba(255,200,217,.09);border-radius:21px;pointer-events:none}
+.letter-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;color:var(--rose);font-size:12px}
+.letter-top span:last-child{color:#c8aebc}
+.letter h3{font-size:25px;margin:0 0 20px}
+.letter p{color:#e2cbd5;line-height:2.5;font-size:15px;margin:0 0 14px}
+.signature{text-align:left;color:#ffb5ca;font-size:19px;margin-top:30px}
+.signature small{display:block;font-size:12px;color:#c8aebc;margin-top:5px}
+.final{padding:115px 0 125px;text-align:center}
+.final-heart{font-size:48px;filter:drop-shadow(0 0 18px rgba(255,111,159,.5));margin-bottom:22px}
+.final h2{font-size:clamp(30px,6vw,54px)}
+.final p{max-width:580px;margin:0 auto;color:#d9c2ce;line-height:2.2}
+.reveal-btn{margin-top:35px;border:1px solid rgba(255,177,201,.45);background:linear-gradient(120deg,#ffb2c8,#f17da5);color:#2a1020;padding:15px 27px;border-radius:100px;font:700 14px "Vazirmatn",sans-serif;cursor:pointer;box-shadow:0 12px 40px rgba(241,125,165,.2);transition:transform .25s,box-shadow .25s}
+.reveal-btn:hover{transform:translateY(-3px);box-shadow:0 17px 50px rgba(241,125,165,.3)}
+.hidden-message{display:none;max-width:590px;margin:26px auto 0;padding:23px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.06);line-height:2.2;color:#fff0f4;animation:appear .6s ease}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:25px 15px 35px;border-top:1px solid rgba(255,255,255,.07);color:#9f8796;font-size:11px}
+footer b{color:#e9b2c6;font-weight:500}
+.floating{position:fixed;bottom:-40px;z-index:-1;color:#ff9db9;opacity:0;pointer-events:none;animation:floatUp linear infinite}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.25}90%{opacity:.18}100%{transform:translateY(-115vh) rotate(240deg);opacity:0}}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:650px){
+ .container{width:min(100% - 30px,520px)}
+ .nav{padding:17px 18px}.nav-note{font-size:11px}
+ .hero{min-height:92svh;padding-top:100px}
+ section{padding:76px 0}
+ .cards{grid-template-columns:1fr;gap:12px}
+ .card{min-height:0;padding:24px}
+ .quote{padding:40px 17px}
+ .letter{padding:27px 22px}
+ .letter:before{inset:6px}
+ .final{padding:85px 0 95px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="nav">
+  <div class="brand"><span class="brand-mark">♥</span><span>یک حرف از دل</span></div>
+  <div class="nav-note">برای یک نفر، با تمامِ قلب</div>
+</div>
+
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">A LITTLE PAGE, A LOT OF LOVE</div>
+    <span class="hero-heart">♡</span>
+    <h1>برایِ <span class="name">سُودا</span></h1>
+    <p class="hero-sub">این صفحه شاید فقط چند خط و چند تصویر باشد؛<br>اما پشتِ تک‌تکِ کلمه‌هایش، <strong>یک دنیا دوست داشتن، دلتنگی و قدردانی</strong> پنهان شده.</p>
+  </div>
+  <div class="scroll-cue">آرام بیا پایین<i></i></div>
+</header>
+
+<main>
+<section>
+ <div class="container">
+  <div class="section-head reveal">
+   <div class="overline">THREE THINGS I WANT YOU TO KNOW</div>
+   <h2>سه حقیقتِ ساده، از تهِ دلم</h2>
+   <p>شاید بارها گفته باشم، اما بعضی حرف‌ها ارزش این را دارند که هزار بار تکرار شوند.</p>
+  </div>
+  <div class="cards">
+   <article class="card reveal">
+    <span class="card-icon">♡</span>
+    <h3>چقدر دوستت دارم؟</h3>
+    <p>بیشتر از چیزی که بتوانم اندازه بگیرم یا درست توضیح بدهم. دوست داشتنت برای من یک جمله نیست؛ حسی است که در تمام روزم جریان دارد.</p>
+    <span class="tiny">MORE THAN WORDS</span>
+   </article>
+   <article class="card reveal">
+    <span class="card-icon">☾</span>
+    <h3>چقدر دلتنگت بودم؟</h3>
+    <p>خیلی بیشتر از آنچه شاید از حرف‌هایم فهمیده باشی. وقت‌هایی که دور بودی، جای خالی‌ات در ساده‌ترین لحظه‌های روزم هم حس می‌شد.</p>
+    <span class="tiny">IN EVERY QUIET MOMENT</span>
+   </article>
+   <article class="card reveal">
+    <span class="card-icon">✧</span>
+    <h3>چقدر از بودنت خوشحالم؟</h3>
+    <p>از اینکه تو را در زندگی‌ام دارم، از اینکه می‌توانم با تو بخندم و از داشتنِ کسی مثل تو احساس خوش‌شانسی کنم، واقعاً خوشحالم.</p>
+    <span class="tiny">MY FAVORITE KIND OF HAPPINESS</span>
+   </article>
+   <article class="card reveal">
+    <span class="card-icon">✦</span>
+    <h3>چقدر قدردانتم؟</h3>
+    <p>برای وقت‌هایی که روزها آسان نبودند و تو کنارم ماندی. حضورت به من دلگرمی می‌دهد؛ ممنونم که در سختی‌ها تنهایم نگذاشتی.</p>
+    <span class="tiny">THANK YOU FOR STAYING</span>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="quote-section">
+ <div class="container">
+  <div class="quote reveal">
+   <div class="quote-mark">“</div>
+   <p>من فقط روزهای خوب را با تو نمی‌خواهم؛<br>دلم می‌خواهد در <em>تمامِ مسیر</em>، کنار هم بمانیم.</p>
+   <small>یک قولِ آرام، از دلِ من به تو</small>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-head reveal">
+   <div class="overline">A LETTER FOR YOU</div>
+   <h2>چند خط که باید بدانی…</h2>
+   <p>نه برای مناسبت خاصی؛ فقط چون دلم خواست امروز، دوست داشتنت را کمی قشنگ‌تر به تو نشان بدهم.</p>
+  </div>
+  <div class="letter-wrap reveal">
+   <div class="letter">
+    <div class="letter-top"><span>نامه‌ای برای سُودا</span><span>با عشق، همیشه</span></div>
+    <h3>سُودای عزیزم،</h3>
+    <p>گاهی آن‌قدر حرف در دلم جمع می‌شود که نمی‌دانم از کجا شروع کنم. فقط می‌خواهم بدانی که بودنت برایم چقدر باارزش است.</p>
+    <p>دلتنگت می‌شوم؛ حتی وقتی فاصله‌مان فقط به اندازه‌ی چند ساعت باشد. خوشحالم که تو را دارم و خوشحالم که در این مسیر، کسی مثل تو کنارم است.</p>
+    <p>ممنونم برای تمام وقت‌هایی که در سختی‌ها کنارم بودی. شاید همیشه نتوانم آن‌طور که باید احساسم را نشان بدهم، اما هیچ‌کدام از محبت‌هایت برایم عادی و فراموش‌شدنی نیست.</p>
+    <p>من هم می‌خواهم برای تو همان آدمی باشم که در روزهای سخت بتوانی به بودنش تکیه کنی؛ نه فقط در حرف، بلکه در عمل.</p>
+    <div class="signature">با تمامِ دلم، محمد<small>برای تو؛ چون تو برای من عزیزی.</small></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="container reveal">
+  <div class="final-heart">❤️</div>
+  <div class="overline">ONE LAST THING</div>
+  <h2>خوشحالم که <span style="color:var(--pink)">تو</span> را دارم.</h2>
+  <p>اگر قرار باشد از بین تمام اتفاق‌های قشنگ زندگی‌ام یکی را انتخاب کنم، آشنایی با تو یکی از عزیزترین‌های من است.</p>
+  <button class="reveal-btn" id="surpriseBtn" type="button">این یکی فقط برای توئه…</button>
+  <div class="hidden-message" id="secret">سُودا جان، دوستت دارم؛ دلتنگت می‌شوم؛ و هر روز بابت بودنت خدا را شکر می‌کنم. ممنونم که در روزهای سخت کنارمی. امیدوارم من هم همیشه دلیلی برای لبخندت و تکیه‌گاهی امن برای روزهای سختت باشم. ❤️<br><br>— محمد</div>
+ </div>
+</section>
+</main>
+<footer>ساخته شده با عشق <b>از طرف محمد، برای سُودا</b> · ♥</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('surpriseBtn').addEventListener('click',function(){
+ document.getElementById('secret').style.display='block';
+ this.textContent='این حرف همیشه برای توئه ❤️';
+ this.disabled=true;
+ for(let i=0;i<18;i++){
+  const h=document.createElement('span');h.textContent=['♥','♡','✦'][i%3];h.style.cssText=`position:fixed;z-index:20;left:${Math.random()*100}vw;top:${55+Math.random()*30}vh;color:#ff9db9;font-size:${14+Math.random()*22}px;pointer-events:none;transition:transform 2s ease,opacity 2s ease`;
+  document.body.appendChild(h);requestAnimationFrame(()=>{h.style.transform=`translate(${(Math.random()-.5)*180}px,-${100+Math.random()*230}px) rotate(${Math.random()*180}deg)`;h.style.opacity='0'});setTimeout(()=>h.remove(),2100);
+ }
+});
+for(let i=0;i<16;i++){
+ const el=document.createElement('span');el.className='floating';el.textContent=['♡','✦','♥'][i%3];
+ el.style.left=(Math.random()*100)+'vw';el.style.fontSize=(12+Math.random()*17)+'px';
+ el.style.animationDuration=(13+Math.random()*15)+'s';el.style.animationDelay=(-Math.random()*25)+'s';
+ document.body.appendChild(el);
+}
+</script>
+</body>
+</html>
